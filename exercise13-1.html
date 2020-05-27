@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Exercise 13-1</title>
+	<link rel="stylesheet" href="css/exercise13-1.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<img src="images/iViettech-Logo.png" alt="logo">
+			<h1>SAN JOAQUIN VALLEY TOWN HALL</h1>
+			<i>Celebrating our 75th Year</i>
+		</header>
+		<div class="menu">
+			<ul >
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Speakers</a></li>
+				<li><a href="#">Luncheons</a></li>
+				<li><a href="#">Tickers</a></li>
+				<li><a href="#">About Us</a>
+					<ul class="sub_menu">
+						<li><a href="#">Our History</a></li>
+						<li><a href="#">Board of Directors</a></li>
+						<li><a href="#">Past Speakers</a></li>
+						<li><a href="#">Contact Information</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<section class="content1">
+			<h2>Guest speakers</h2>
+			<div class="box">
+				<h4>October</h4>
+				<a href="">Jeffrey Toobin</a>
+				<img src="images/Jeffrey_toobin_2012.jpg" alt="image">
+			</div>
+			<div class="box">
+				<h4>November</h4>
+				<a href="">Andrew Ross Sorkin</a>
+				<img src="images/Andrew Ross Sorkin.jpg" alt="image">
+			</div>
+			<div class="box">
+				<h4>January</h4>
+				<a href="">Amy Chua</a>
+				<img src="images/Amy Chua.jpg" alt="image">
+			</div>
+		</section>
+		<section class="content2">
+			<h1>Order Form</h1>
+			<form action="#" name="myform" method="get">
+				<fieldset>
+					<legend>Member information</legend>
+					<p>Email: <input type="email" name="txtname" required autofocus autocomplete></p>
+					<p>First Name: <input type="text" name="txtFirstname"></p>
+					<p>Last Name: <input type="text" name="txtLastname"></p>
+					<p>Address: <input type="text" name="txtaddress"></p>
+					<p>City: <input type="text" name="txtCity"></p>
+					<p>State:<input type="number" name="txtState" placeholder="2 character code Ex:02" pattern="\d{5}([\-]\d{4})?" title="99999 or 99999-9999" required></p>
+					<p>Zip code: <input type="number" name="txtZipcode"></p>
+					<p>Phone Number: <input type="number" name="txtPN"></p>
+				</fieldset>
+				<fieldset>
+					<legend>Ordering information</legend>
+					<p>Order Type: 
+						<select>
+							<option value="member package">member package</option>
+							<option value="donor package">donor package</option>
+							<option value="single Tickers">single tickers</option>
+						</select>
+					</p>
+					<p>Number of ticker: <input type="number" name="txtNuticker"></p>
+				</fieldset>	
+				<fieldset>
+					<legend>Payment Method</legend>
+					<p class="radio">
+						<p><label for="pay">Bill Me</label><input id="pay" type="radio" name="txtPay" id="pay" value="Bill Me"></p>
+						<p><label for="cre">Credit Crad</label><input type="radio" id="cre" name="txtPay" id="pay" value="Credit Crad"></p>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend>Credit Card Information</legend>
+					<p>Card Tyle: 
+						<select>
+							<option value="Visa">Visa</option>
+							<option value="Master Card">Master Card</option>
+							<option value="VPBand">VBBand</option>
+						</select>
+					</p>
+					<p>Card Number: <input type="number" name="txtCardnumber"></p>
+					<p>Expiration date: 
+						<select>
+							<option value="January">January</option>
+							<option value="February">February</option>
+							<option value="March">March</option>
+							<option value="April">April</option>
+							<option value="May">May</option>
+							<option value="June">June</option>
+							<option value="July">July</option>
+							<option value="August">August</option>
+							<option value="September">September</option>
+							<option value="October">October</option>
+							<option value="November">November</option>
+							<option value="December">December</option>
+						</select>
+						<select>
+							<option value="2017">2017</option>
+							<option value="2018">2018</option>
+							<option value="2019">2019</option>
+							<option value="2020">2020</option>
+							<option value="2021">2021</option>
+						</select>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend>Submit your order</legend>
+					<input type="submit" name="submit" value="Submit">
+					<input type="reset" name="reset" value="Reset fields">
+				</fieldset>
+			</form>
+		</section>
+		<footer>
+			@2020, San Joaquin Valley Tơn hall, Fresno, Ca 93755 - Quang The Ngo
+		</footer>
+	</div>
+</body>
+</html>
